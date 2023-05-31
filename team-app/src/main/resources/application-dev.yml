@@ -1,0 +1,37 @@
+spring:
+  mvc:
+    static-path-pattern: /**
+  resources:
+    static-locations: classpath:/upload,classpath:/static/upload,classpath:/static,classpath:/pic/
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+
+  # 服务器数据连接
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/hnbz?useAffectedRows=true&serverTimezone=Asia/Shanghai&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: sub@Raysdata
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  #redis配置
+  redis:
+    # 服务器数据连接token删除失败
+    host: 127.0.0.1
+    port: 6379
+    password:
+
+# 整合 mybatis
+mybatis:
+  # 搜索指定包别名
+  typeAliasesPackage: com.team.**.entity
+  # 配置 mapper 的扫描，找到所有的 mapper.xml 映射文件
+  mapper-locations: classpath:mapper/**/*.xml
+  #开启驼峰命名
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.team.performance.dao.PerformanceAppealMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.team.performance.entity.PerformanceAppealVo">
+        <id column="ID" property="id" />
+        <result column="UPDATED_BY" property="updatedBy" />
+        <result column="UPDATED_TIME" property="updatedTime" />
+        <result column="CREATED_BY" property="createdBy" />
+        <result column="CREATED_TIME" property="createdTime" />
+        <result column="IS_DELETED" property="isDeleted" />
+        <result column="ASSESSMENT_CYCLE" property="assessmentCycle" />
+        <result column="ASSESSMENT_TIME" property="assessmentTime" />
+        <result column="APPEAL_REASON" property="appealReason" />
+        <result column="APPEAL_PEOPLE" property="appealPeople" />
+        <result column="APPEAL_TIME" property="appealTime" />
+        <result column="APPEAL_BREAK" property="appealBreak" />
+        <result column="FEEDBACK_STATUS" property="feedbackStatus" />
+        <result column="FEEDBACK_REASON" property="feedbackReason" />
+        <result column="FEEDBACK_TIME" property="feedbackTime" />
+    </resultMap>
+
+</mapper>

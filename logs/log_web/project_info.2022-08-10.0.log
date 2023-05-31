@@ -1,0 +1,790 @@
+2022-08-10 09:27:23.826 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:27:47.399 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:28:16.328 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:28:45.418 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:29:12.759 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:29:43.159 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:30:08.477 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:30:36.519 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:30:59.957 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:31:26.450 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:31:53.385 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:32:20.460 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:32:45.036 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:33:09.806 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:33:33.203 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:34:01.840 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:34:25.809 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:34:54.354 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:35:23.785 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:35:50.914 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:36:14.353 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:36:39.993 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:37:04.640 DEBUG --- [nio-8001-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/doc.html", parameters={}
+2022-08-10 09:37:04.640 DEBUG --- [nio-8001-exec-4] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /doc.html
+2022-08-10 09:37:04.641 DEBUG --- [nio-8001-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/upload/", "classpath:/static/upload/", "classpath:/static/", "classpath:/pic/", "/"]
+2022-08-10 09:37:04.645 DEBUG --- [nio-8001-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.651 DEBUG --- [io-8001-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/ext/i18n.js", parameters={}
+2022-08-10 09:37:04.651 DEBUG --- [nio-8001-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/jquery/jquery-1.12.4.min.js", parameters={}
+2022-08-10 09:37:04.651 DEBUG --- [io-8001-exec-10] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/ext/i18n.js
+2022-08-10 09:37:04.651 DEBUG --- [nio-8001-exec-3] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/jquery/jquery-1.12.4.min.js
+2022-08-10 09:37:04.652 DEBUG --- [nio-8001-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.652 DEBUG --- [io-8001-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.653 DEBUG --- [nio-8001-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/bootstrap/css/bootstrap.min.css", parameters={}
+2022-08-10 09:37:04.653 DEBUG --- [nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/layer3.0.3/skin/default/layer.css", parameters={}
+2022-08-10 09:37:04.653 DEBUG --- [nio-8001-exec-9] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/bootstrap/css/bootstrap.min.css
+2022-08-10 09:37:04.653 DEBUG --- [nio-8001-exec-1] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/layer3.0.3/skin/default/layer.css
+2022-08-10 09:37:04.654 DEBUG --- [nio-8001-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.654 DEBUG --- [nio-8001-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.654 DEBUG --- [nio-8001-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/highlight/styles/style.css", parameters={}
+2022-08-10 09:37:04.654 DEBUG --- [nio-8001-exec-7] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/highlight/styles/style.css
+2022-08-10 09:37:04.654 DEBUG --- [nio-8001-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/highlight/styles/docco.css", parameters={}
+2022-08-10 09:37:04.654 DEBUG --- [nio-8001-exec-2] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/highlight/styles/docco.css
+2022-08-10 09:37:04.654 DEBUG --- [io-8001-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.655 DEBUG --- [nio-8001-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.655 DEBUG --- [nio-8001-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.657 DEBUG --- [nio-8001-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/highlight/styles/default.css", parameters={}
+2022-08-10 09:37:04.657 DEBUG --- [nio-8001-exec-5] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/highlight/styles/default.css
+2022-08-10 09:37:04.657 DEBUG --- [nio-8001-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.658 DEBUG --- [nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.658 DEBUG --- [nio-8001-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.658 DEBUG --- [nio-8001-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.658 DEBUG --- [nio-8001-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.660 DEBUG --- [nio-8001-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.663 DEBUG --- [nio-8001-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/cdao/swaggerbootstrapui.css?v=1.9.6", parameters={masked}
+2022-08-10 09:37:04.663 DEBUG --- [nio-8001-exec-6] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/cdao/swaggerbootstrapui.css
+2022-08-10 09:37:04.663 DEBUG --- [nio-8001-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.664 DEBUG --- [nio-8001-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.665 DEBUG --- [nio-8001-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.666 DEBUG --- [io-8001-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/ext/sbuadmin.css", parameters={}
+2022-08-10 09:37:04.666 DEBUG --- [nio-8001-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/iconfont/iconfont.css", parameters={}
+2022-08-10 09:37:04.666 DEBUG --- [nio-8001-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/layui/css/layui.css", parameters={}
+2022-08-10 09:37:04.666 DEBUG --- [io-8001-exec-10] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/ext/sbuadmin.css
+2022-08-10 09:37:04.666 DEBUG --- [nio-8001-exec-8] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/iconfont/iconfont.css
+2022-08-10 09:37:04.666 DEBUG --- [nio-8001-exec-4] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/layui/css/layui.css
+2022-08-10 09:37:04.666 DEBUG --- [nio-8001-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.666 DEBUG --- [nio-8001-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.666 DEBUG --- [io-8001-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.668 DEBUG --- [io-8001-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.668 DEBUG --- [nio-8001-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.668 DEBUG --- [nio-8001-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.669 DEBUG --- [nio-8001-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/bootstrap-tabx/css/bootstrap-tabs-x.min.css", parameters={}
+2022-08-10 09:37:04.669 DEBUG --- [nio-8001-exec-2] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/bootstrap-tabx/css/bootstrap-tabs-x.min.css
+2022-08-10 09:37:04.670 DEBUG --- [nio-8001-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.672 DEBUG --- [nio-8001-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.673 DEBUG --- [nio-8001-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/ace/ace.min.js", parameters={}
+2022-08-10 09:37:04.673 DEBUG --- [nio-8001-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/cdao/swaggerbootstrapui-md.css?v=1.9.6", parameters={masked}
+2022-08-10 09:37:04.673 DEBUG --- [nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/ext/editormd.min.css", parameters={}
+2022-08-10 09:37:04.673 DEBUG --- [nio-8001-exec-7] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/ace/ace.min.js
+2022-08-10 09:37:04.673 DEBUG --- [nio-8001-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/ace/bootstrap.min.js", parameters={}
+2022-08-10 09:37:04.673 DEBUG --- [nio-8001-exec-1] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/ext/editormd.min.css
+2022-08-10 09:37:04.673 DEBUG --- [nio-8001-exec-3] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/cdao/swaggerbootstrapui-md.css
+2022-08-10 09:37:04.673 DEBUG --- [nio-8001-exec-5] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/ace/bootstrap.min.js
+2022-08-10 09:37:04.673 DEBUG --- [nio-8001-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.673 DEBUG --- [nio-8001-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.673 DEBUG --- [nio-8001-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.673 DEBUG --- [nio-8001-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.674 DEBUG --- [nio-8001-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/jquery/clipboard/clipboard.min.js", parameters={}
+2022-08-10 09:37:04.674 DEBUG --- [nio-8001-exec-9] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/jquery/clipboard/clipboard.min.js
+2022-08-10 09:37:04.674 DEBUG --- [nio-8001-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.675 DEBUG --- [nio-8001-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/layer3.0.3/layer.js", parameters={}
+2022-08-10 09:37:04.675 DEBUG --- [nio-8001-exec-6] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/layer3.0.3/layer.js
+2022-08-10 09:37:04.676 DEBUG --- [nio-8001-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.676 DEBUG --- [nio-8001-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.676 DEBUG --- [nio-8001-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.676 DEBUG --- [nio-8001-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.676 DEBUG --- [nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.677 DEBUG --- [nio-8001-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.678 DEBUG --- [nio-8001-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.679 DEBUG --- [io-8001-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/highlight/highlight.pack.js", parameters={}
+2022-08-10 09:37:04.679 DEBUG --- [io-8001-exec-10] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/highlight/highlight.pack.js
+2022-08-10 09:37:04.679 DEBUG --- [io-8001-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.680 DEBUG --- [nio-8001-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/jquery/template-web.js", parameters={}
+2022-08-10 09:37:04.680 DEBUG --- [nio-8001-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/jquery/marked.js", parameters={}
+2022-08-10 09:37:04.680 DEBUG --- [nio-8001-exec-4] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/jquery/template-web.js
+2022-08-10 09:37:04.680 DEBUG --- [nio-8001-exec-8] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/jquery/marked.js
+2022-08-10 09:37:04.681 DEBUG --- [nio-8001-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.681 DEBUG --- [nio-8001-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.681 DEBUG --- [io-8001-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.681 DEBUG --- [nio-8001-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/jquery/axios.min.js", parameters={}
+2022-08-10 09:37:04.681 DEBUG --- [nio-8001-exec-2] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/jquery/axios.min.js
+2022-08-10 09:37:04.681 DEBUG --- [nio-8001-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.682 DEBUG --- [nio-8001-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/bootstrap-tabx/js/bootstrap-tabs-x.min.js", parameters={}
+2022-08-10 09:37:04.682 DEBUG --- [nio-8001-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/layui/layui.js", parameters={}
+2022-08-10 09:37:04.682 DEBUG --- [nio-8001-exec-3] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/bootstrap-tabx/js/bootstrap-tabs-x.min.js
+2022-08-10 09:37:04.682 DEBUG --- [nio-8001-exec-7] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/layui/layui.js
+2022-08-10 09:37:04.682 DEBUG --- [nio-8001-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.682 DEBUG --- [nio-8001-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.683 DEBUG --- [nio-8001-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.683 DEBUG --- [nio-8001-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.684 DEBUG --- [nio-8001-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.684 DEBUG --- [nio-8001-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.685 DEBUG --- [nio-8001-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.687 DEBUG --- [nio-8001-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/ace-editor/ace.js", parameters={}
+2022-08-10 09:37:04.687 DEBUG --- [nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/jquery/showdown.min.js", parameters={}
+2022-08-10 09:37:04.687 DEBUG --- [nio-8001-exec-5] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/ace-editor/ace.js
+2022-08-10 09:37:04.687 DEBUG --- [nio-8001-exec-1] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/jquery/showdown.min.js
+2022-08-10 09:37:04.687 DEBUG --- [nio-8001-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.687 DEBUG --- [nio-8001-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.688 DEBUG --- [nio-8001-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/jquery/async.min.js", parameters={}
+2022-08-10 09:37:04.688 DEBUG --- [nio-8001-exec-9] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/jquery/async.min.js
+2022-08-10 09:37:04.688 DEBUG --- [nio-8001-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.690 DEBUG --- [nio-8001-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.690 DEBUG --- [nio-8001-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/jquery/md5.min.js", parameters={}
+2022-08-10 09:37:04.690 DEBUG --- [nio-8001-exec-6] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/jquery/md5.min.js
+2022-08-10 09:37:04.690 DEBUG --- [nio-8001-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/jquery/json5.js", parameters={}
+2022-08-10 09:37:04.690 DEBUG --- [io-8001-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/cdao/swaggerbootstrapui.js?v=1.9.6", parameters={masked}
+2022-08-10 09:37:04.690 DEBUG --- [nio-8001-exec-4] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/jquery/json5.js
+2022-08-10 09:37:04.690 DEBUG --- [io-8001-exec-10] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/cdao/swaggerbootstrapui.js
+2022-08-10 09:37:04.691 DEBUG --- [nio-8001-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.691 DEBUG --- [io-8001-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.691 DEBUG --- [nio-8001-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.692 DEBUG --- [nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.693 DEBUG --- [nio-8001-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.693 DEBUG --- [nio-8001-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.697 DEBUG --- [nio-8001-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.698 DEBUG --- [nio-8001-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/layer3.0.3/skin/default/layer.css?v=3.0.3303", parameters={masked}
+2022-08-10 09:37:04.698 DEBUG --- [nio-8001-exec-8] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/layer3.0.3/skin/default/layer.css
+2022-08-10 09:37:04.699 DEBUG --- [nio-8001-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.701 DEBUG --- [nio-8001-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.703 DEBUG --- [io-8001-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.769 DEBUG --- [nio-8001-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/ext/sbuadmin.js", parameters={}
+2022-08-10 09:37:04.769 DEBUG --- [nio-8001-exec-2] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/ext/sbuadmin.js
+2022-08-10 09:37:04.769 DEBUG --- [nio-8001-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.771 DEBUG --- [nio-8001-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.775 DEBUG --- [nio-8001-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/layui/lay/modules/layer.js", parameters={}
+2022-08-10 09:37:04.775 DEBUG --- [nio-8001-exec-7] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/layui/lay/modules/layer.js
+2022-08-10 09:37:04.775 DEBUG --- [nio-8001-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.777 DEBUG --- [nio-8001-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.781 DEBUG --- [nio-8001-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/layui/css/modules/layer/default/layer.css?v=3.1.1", parameters={masked}
+2022-08-10 09:37:04.781 DEBUG --- [nio-8001-exec-3] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/layui/css/modules/layer/default/layer.css
+2022-08-10 09:37:04.781 DEBUG --- [nio-8001-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.781 DEBUG --- [nio-8001-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/layui/lay/modules/element.js", parameters={}
+2022-08-10 09:37:04.781 DEBUG --- [nio-8001-exec-9] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/layui/lay/modules/element.js
+2022-08-10 09:37:04.781 DEBUG --- [nio-8001-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.782 DEBUG --- [nio-8001-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.783 DEBUG --- [nio-8001-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.791 DEBUG --- [nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/ext/treetable.js", parameters={}
+2022-08-10 09:37:04.791 DEBUG --- [nio-8001-exec-1] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/ext/treetable.js
+2022-08-10 09:37:04.791 DEBUG --- [nio-8001-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.793 DEBUG --- [nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.801 DEBUG --- [nio-8001-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/layui/lay/modules/table.js", parameters={}
+2022-08-10 09:37:04.801 DEBUG --- [nio-8001-exec-6] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/layui/lay/modules/table.js
+2022-08-10 09:37:04.802 DEBUG --- [nio-8001-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.804 DEBUG --- [nio-8001-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.812 DEBUG --- [nio-8001-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/layui/lay/modules/laytpl.js", parameters={}
+2022-08-10 09:37:04.812 DEBUG --- [nio-8001-exec-4] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/layui/lay/modules/laytpl.js
+2022-08-10 09:37:04.812 DEBUG --- [nio-8001-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.814 DEBUG --- [nio-8001-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.819 DEBUG --- [nio-8001-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/layui/lay/modules/laypage.js", parameters={}
+2022-08-10 09:37:04.819 DEBUG --- [nio-8001-exec-5] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/layui/lay/modules/laypage.js
+2022-08-10 09:37:04.819 DEBUG --- [nio-8001-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.822 DEBUG --- [nio-8001-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.827 DEBUG --- [nio-8001-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/layui/lay/modules/form.js", parameters={}
+2022-08-10 09:37:04.827 DEBUG --- [nio-8001-exec-8] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/layui/lay/modules/form.js
+2022-08-10 09:37:04.827 DEBUG --- [nio-8001-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.828 DEBUG --- [nio-8001-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.835 DEBUG --- [io-8001-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/layui/lay/modules/util.js", parameters={}
+2022-08-10 09:37:04.835 DEBUG --- [io-8001-exec-10] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/layui/lay/modules/util.js
+2022-08-10 09:37:04.835 DEBUG --- [io-8001-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.837 DEBUG --- [io-8001-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.842 DEBUG --- [nio-8001-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/ext/treetable-lay/treetable.css", parameters={}
+2022-08-10 09:37:04.842 DEBUG --- [nio-8001-exec-2] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/ext/treetable-lay/treetable.css
+2022-08-10 09:37:04.842 DEBUG --- [nio-8001-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.844 DEBUG --- [nio-8001-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.847 DEBUG --- [nio-8001-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/swagger-resources/configuration/ui", parameters={}
+2022-08-10 09:37:04.847 DEBUG --- [nio-8001-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/swagger-resources", parameters={}
+2022-08-10 09:37:04.847 DEBUG --- [nio-8001-exec-7] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /swagger-resources/configuration/ui
+2022-08-10 09:37:04.847 DEBUG --- [nio-8001-exec-3] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /swagger-resources
+2022-08-10 09:37:04.847 DEBUG --- [nio-8001-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to springfox.documentation.swagger.web.ApiResourceController#swaggerResources()
+2022-08-10 09:37:04.847 DEBUG --- [nio-8001-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to springfox.documentation.swagger.web.ApiResourceController#uiConfiguration()
+2022-08-10 09:37:04.848 DEBUG --- [nio-8001-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/images/api.ico", parameters={}
+2022-08-10 09:37:04.848 DEBUG --- [nio-8001-exec-9] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/images/api.ico
+2022-08-10 09:37:04.848 DEBUG --- [nio-8001-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/javascript, */*;q=0.01] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-08-10 09:37:04.848 DEBUG --- [nio-8001-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/javascript, */*;q=0.01] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-08-10 09:37:04.848 DEBUG --- [nio-8001-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[springfox.documentation.swagger.web.SwaggerResource@583392ca]]
+2022-08-10 09:37:04.848 DEBUG --- [nio-8001-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:04.848 DEBUG --- [nio-8001-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [springfox.documentation.swagger.web.UiConfiguration@4be15c3c]
+2022-08-10 09:37:04.848 DEBUG --- [nio-8001-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.848 DEBUG --- [nio-8001-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.850 DEBUG --- [nio-8001-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:04.853 DEBUG --- [nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/v2/api-docs?group=api", parameters={masked}
+2022-08-10 09:37:04.854 DEBUG --- [nio-8001-exec-1] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /v2/api-docs
+2022-08-10 09:37:04.855 DEBUG --- [nio-8001-exec-1] pertySourcedRequestMappingHandlerMapping : Mapped to springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)
+2022-08-10 09:37:04.874 DEBUG --- [nio-8001-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/javascript, */*;q=0.01] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-08-10 09:37:04.874 DEBUG --- [nio-8001-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [springfox.documentation.spring.web.json.Json@547328ef]
+2022-08-10 09:37:04.875 DEBUG --- [nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:05.153 DEBUG --- [nio-8001-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/ace-editor/mode-json.js", parameters={}
+2022-08-10 09:37:05.153 DEBUG --- [nio-8001-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/ace-editor/theme-eclipse.js", parameters={}
+2022-08-10 09:37:05.153 DEBUG --- [nio-8001-exec-6] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/ace-editor/mode-json.js
+2022-08-10 09:37:05.153 DEBUG --- [nio-8001-exec-4] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/ace-editor/theme-eclipse.js
+2022-08-10 09:37:05.153 DEBUG --- [nio-8001-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:05.153 DEBUG --- [nio-8001-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:05.155 DEBUG --- [nio-8001-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:05.155 DEBUG --- [nio-8001-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:05.223 DEBUG --- [nio-8001-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/layui/font/iconfont.woff?v=240", parameters={masked}
+2022-08-10 09:37:05.223 DEBUG --- [nio-8001-exec-5] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/layui/font/iconfont.woff
+2022-08-10 09:37:05.223 DEBUG --- [nio-8001-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:05.226 DEBUG --- [nio-8001-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:05.250 DEBUG --- [nio-8001-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/hn_team_web/webjars/bycdao-ui/ace-editor/worker-json.js", parameters={}
+2022-08-10 09:37:05.250 DEBUG --- [nio-8001-exec-8] pertySourcedRequestMappingHandlerMapping : looking up handler for path: /webjars/bycdao-ui/ace-editor/worker-json.js
+2022-08-10 09:37:05.250 DEBUG --- [nio-8001-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2022-08-10 09:37:05.253 DEBUG --- [nio-8001-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-10 09:37:06.190 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:37:29.944 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:37:54.249 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:38:20.832 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:38:47.530 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:39:14.926 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:39:39.214 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:40:07.810 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:40:36.988 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:41:06.060 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:41:31.074 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:41:58.009 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:42:27.741 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:42:55.036 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:43:21.548 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:43:51.416 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:44:16.296 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:44:45.595 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:45:12.378 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:45:40.748 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:46:05.481 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:46:30.409 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:46:58.858 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:47:28.635 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:47:54.515 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:48:19.224 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:48:42.418 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:49:06.221 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:49:30.994 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:49:54.744 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:50:17.925 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:50:46.785 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:51:15.781 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:51:39.468 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:52:08.252 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:52:36.143 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:53:02.132 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:53:29.617 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:53:53.659 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:54:23.567 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:54:51.666 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:55:17.212 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:55:45.254 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:56:08.774 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:56:34.170 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:56:59.268 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:57:27.678 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:57:53.684 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:58:17.315 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:58:47.160 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:59:11.734 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 09:59:38.491 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:00:05.496 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:00:29.381 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:00:52.693 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:01:19.614 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:01:44.789 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:02:14.483 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:02:37.682 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:03:07.643 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:03:35.066 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:04:01.985 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:04:28.383 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:04:58.124 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:05:24.287 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:05:47.638 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:06:14.400 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:06:42.114 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:07:08.908 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:07:33.520 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:07:57.503 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:08:26.437 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:08:55.861 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:09:22.239 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:09:48.042 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:10:17.301 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:10:44.861 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:11:10.316 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:11:37.672 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:12:02.673 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:12:27.098 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:12:53.726 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:13:21.230 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:13:46.965 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:14:16.332 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:14:45.272 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:15:09.661 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:15:34.175 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:16:03.649 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:16:29.562 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:16:58.542 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:17:21.731 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:17:46.960 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:18:14.485 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:18:40.931 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:19:04.821 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:19:29.452 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:19:56.852 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:20:21.473 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:20:49.947 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:21:13.717 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:21:42.650 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:22:08.980 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:22:34.204 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:22:57.246 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:23:26.633 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:23:53.335 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:24:17.725 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:24:41.565 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:25:09.010 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:25:32.758 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:25:58.339 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:26:22.492 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:26:51.795 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:27:16.489 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:27:46.285 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:28:13.509 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:28:43.185 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:29:07.126 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:29:32.091 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:29:59.907 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:30:29.356 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:30:58.910 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:31:23.674 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:31:49.120 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:32:14.424 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:32:38.147 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:33:05.365 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:33:32.531 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:34:02.207 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:34:29.815 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:34:58.345 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:35:25.292 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:35:50.109 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:36:18.087 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:36:48.083 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:37:12.206 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:37:39.888 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:38:08.995 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:38:36.640 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:39:01.845 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:39:28.749 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:39:52.536 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:40:20.002 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:40:44.257 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:41:09.203 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:41:33.411 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:41:59.396 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:42:26.421 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:42:50.063 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:43:18.389 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:43:47.453 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:44:14.401 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:44:38.351 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:45:03.998 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:45:29.777 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:45:58.202 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:46:28.202 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:46:56.814 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:47:25.283 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:47:48.876 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:48:12.139 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:48:37.553 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:49:06.958 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:49:32.817 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:50:01.507 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:50:29.429 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:50:54.132 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:51:18.110 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:51:41.944 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:52:07.200 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:52:31.095 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:52:58.527 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:53:24.456 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:53:52.499 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:54:17.253 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:54:44.086 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:55:07.603 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:55:34.016 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:55:59.823 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:56:23.854 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:56:52.620 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:57:17.350 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:57:45.233 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:58:13.809 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:58:38.823 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:59:07.022 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 10:59:35.301 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:00:03.615 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:00:27.009 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:00:51.612 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:01:16.107 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:01:39.602 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:02:04.807 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:02:28.198 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:02:51.313 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:03:14.779 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:03:40.102 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:04:04.018 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:04:34.009 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:04:57.223 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:05:26.415 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:05:50.790 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:06:18.913 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:06:44.633 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:07:13.547 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:07:41.908 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:08:05.810 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:08:30.094 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:08:57.654 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:09:26.223 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:09:51.503 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:10:16.228 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:10:40.767 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:11:09.305 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:11:35.510 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:12:00.075 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:12:24.706 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:12:48.943 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:13:15.098 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:13:39.535 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:14:05.791 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:14:33.305 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:15:03.001 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:15:29.352 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:15:56.047 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:16:20.493 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:16:46.239 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:17:13.905 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:17:39.115 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:18:08.064 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:18:34.972 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:19:01.235 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:19:29.817 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:19:54.940 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:20:18.012 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:20:47.066 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:21:13.563 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:21:41.785 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:22:11.521 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:22:41.163 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:23:09.838 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:23:38.983 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:24:06.265 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:24:34.259 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:25:02.603 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:25:32.511 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:26:00.643 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:26:28.463 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:26:53.549 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:27:19.182 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:27:48.708 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:28:18.398 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:28:44.781 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:29:07.948 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:29:30.989 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:29:54.197 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:30:19.319 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:30:47.779 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:31:16.111 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:31:43.719 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:32:07.921 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:32:35.909 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:33:04.739 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:33:33.603 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:33:56.887 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:34:25.865 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:34:53.013 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:35:20.181 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:35:46.497 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:36:16.275 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:36:41.639 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:37:11.349 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:37:34.909 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:38:02.285 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:38:30.828 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:38:59.755 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:39:28.359 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:39:57.141 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:40:24.235 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:40:49.499 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:41:14.888 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:41:44.129 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:42:13.775 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:42:39.153 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:43:03.198 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:43:26.506 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:43:53.949 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:44:19.106 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:44:44.327 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:45:09.555 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:45:38.257 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:46:07.605 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:46:35.520 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:47:04.273 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:47:29.903 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:47:57.376 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:48:25.894 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:48:50.879 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:49:19.929 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:49:49.817 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:50:15.320 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:50:41.315 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:51:07.433 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:51:33.327 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:51:56.697 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:52:25.371 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:52:52.974 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:53:18.970 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:53:46.995 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:54:15.547 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:54:42.711 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:55:11.695 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:55:35.619 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:56:03.323 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:56:26.874 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:56:53.237 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:57:18.135 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:57:41.707 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:58:10.697 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:58:34.408 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:58:58.711 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:59:27.575 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 11:59:52.185 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 12:00:15.807 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 12:00:41.669 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 12:01:11.057 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 12:01:38.956 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 12:02:06.706 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 12:02:30.050 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 12:02:57.727 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 12:03:23.851 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 12:03:48.756 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 12:04:18.492 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 12:04:47.613 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:06:55.344 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:07:23.169 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:07:48.282 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:08:15.112 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:08:39.925 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:09:09.210 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:09:35.814 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:09:59.440 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:10:28.041 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:10:52.319 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:11:20.939 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:11:47.786 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:12:16.337 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:12:45.201 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:13:14.817 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:13:39.885 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:14:09.065 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:14:32.266 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:15:01.797 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:15:28.402 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:15:57.539 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:16:25.284 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:16:52.148 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:17:16.204 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:17:39.916 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:18:07.381 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:18:30.564 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:18:58.055 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:19:26.663 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:19:55.791 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:20:24.820 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:20:51.575 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:21:17.319 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:21:42.560 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:22:08.644 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:22:33.039 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:23:02.943 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:23:27.241 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:23:55.332 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:24:18.887 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:24:42.477 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:25:11.677 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:25:40.666 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:26:04.191 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:26:30.658 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:26:56.641 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:27:22.097 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:27:46.367 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:28:13.511 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:28:40.713 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:29:09.173 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:29:35.262 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:30:05.069 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:30:28.338 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:30:54.000 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:31:21.745 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:31:49.191 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:32:12.406 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:32:40.820 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:33:07.051 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:33:30.272 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:33:59.526 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:34:24.875 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:34:52.315 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:35:18.613 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:35:43.170 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:36:09.914 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:36:38.267 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:37:07.604 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:37:35.863 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:38:04.980 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:38:28.192 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:38:54.344 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:39:24.161 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:39:49.883 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:40:14.311 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:40:37.851 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:41:06.676 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:41:33.373 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:42:02.664 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:42:31.882 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:42:57.827 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:43:26.480 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:43:55.871 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:44:19.380 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:44:44.445 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:45:11.866 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:45:41.551 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:46:07.863 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:46:32.727 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:46:57.571 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:47:26.975 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:47:50.928 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:48:15.758 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:48:38.815 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:49:03.879 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:49:29.455 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:49:56.475 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:50:25.745 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:50:50.149 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:51:13.655 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:51:36.929 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:52:00.851 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:52:27.381 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:52:55.951 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:53:22.842 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:53:47.621 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:54:11.949 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:54:37.085 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:55:01.421 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:55:26.780 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:55:51.141 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:56:17.045 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:56:43.319 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:57:06.615 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:57:35.781 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:58:01.332 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:58:25.856 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:58:53.805 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:59:21.874 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 14:59:49.564 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:00:14.948 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:00:40.614 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:01:05.321 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:01:32.790 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:01:59.949 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:02:25.676 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:02:49.697 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:03:19.681 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:03:45.790 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:04:09.485 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:04:35.466 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:04:59.763 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:05:26.791 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:05:55.357 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:06:23.375 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:06:48.259 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:07:13.131 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:07:42.489 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:08:07.794 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:08:32.767 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:08:58.341 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:09:26.753 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:09:55.197 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:10:22.056 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:10:45.892 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:11:09.083 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:11:37.138 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:12:02.304 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:12:27.145 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:12:50.893 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:13:15.835 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:13:45.496 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:14:12.025 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:14:40.708 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:15:10.251 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:15:36.888 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:16:03.629 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:16:28.241 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:16:51.661 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:17:19.625 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:17:47.391 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:18:13.154 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:18:42.734 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:19:09.119 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:19:37.747 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:20:03.768 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:20:29.719 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:20:58.876 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:21:24.645 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:21:48.358 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:22:11.574 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:22:40.090 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:23:06.690 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:23:35.528 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:24:02.835 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:24:27.612 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:24:51.634 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:25:15.261 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:25:44.629 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:26:13.493 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:26:41.581 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:27:07.545 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:27:32.799 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:27:59.365 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:28:26.305 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:28:56.194 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:29:19.295 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:29:43.268 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:30:06.326 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:30:35.669 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:31:00.084 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:31:25.619 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:31:49.917 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:32:13.390 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:32:41.561 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:33:06.384 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:33:30.360 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:33:59.385 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:34:24.842 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:34:48.719 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:35:12.253 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:35:37.823 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:36:01.743 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:36:25.697 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:36:52.395 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:37:17.792 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:37:42.945 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:38:12.587 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:38:36.057 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:39:04.075 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:39:27.917 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:39:53.716 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:40:19.053 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:40:43.503 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:41:11.361 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:41:39.252 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:42:04.402 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:42:28.700 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:42:54.145 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:43:18.865 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:43:42.181 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers
+2022-08-10 15:44:11.203 DEBUG --- [SchedulerThread] org.quartz.core.QuartzSchedulerThread    : batch acquisition of 0 triggers

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.team.performance.dao.PerformanceModelTeamrelMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.team.performance.entity.PerformanceModelTeamrelVo">
+        <id column="ID" property="id" />
+        <result column="EVALUATION_MODEL_ID" property="modelId" />
+        <result column="TEAM_CODE" property="teamCode" />
+        <result column="TEAM_NAME" property="teamName" />
+    </resultMap>
+
+    <!-- 批量选择适用班组 -->
+    <insert id="batchChooseTeam">
+        INSERT INTO t_performance_model_teamrel
+        (
+            evaluation_model_id,team_code,team_name
+        )
+        VALUES
+        <foreach collection="teamList" item="item" index="index" separator=",">
+            (
+                #{teamVo.modelId},
+                #{item.teamCode},
+                #{item.teamName}
+            )
+        </foreach>
+    </insert>
+
+    <!-- 删除关系表中数据(真删) -->
+    <delete id="deletePerformanceModelTeamRelByModelId">
+        delete from t_performance_model_teamrel
+        where evaluation_model_id = #{modelId}
+    </delete>
+
+</mapper>

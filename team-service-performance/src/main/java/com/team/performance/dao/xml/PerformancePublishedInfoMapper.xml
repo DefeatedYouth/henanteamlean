@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.team.performance.dao.PerformancePublishedInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.team.performance.entity.PerformancePublishedInfoVo">
+        <id column="ID" property="id" />
+        <result column="UPDATED_BY" property="updatedBy" />
+        <result column="UPDATED_TIME" property="updatedTime" />
+        <result column="CREATED_BY" property="createdBy" />
+        <result column="CREATED_TIME" property="createdTime" />
+        <result column="IS_DELETED" property="isDeleted" />
+        <result column="SOURCE" property="source" />
+        <result column="COMPANY_NAME" property="companyName" />
+        <result column="COMPANY_ID" property="companyId" />
+        <result column="IS_HAV_TEAM" property="isHavTeam" />
+        <result column="QUATE_NAME" property="quateName" />
+        <result column="DETAIL_RULE" property="detailRule" />
+        <result column="ASSESSMENT_CYCLE" property="assessmentCycle" />
+        <result column="ASSESSOR" property="assessor" />
+        <result column="ASSESSMENT_OBJECT" property="assessmentObject" />
+        <result column="INTEGRAL" property="integral" />
+        <result column="SHOW_TIME" property="showTime" />
+        <result column="PRODUCTOR_ID" property="productorId" />
+    </resultMap>
+
+    <resultMap id="historyMap" type="com.team.performance.entity.PerformancePublishedInfoVo">
+        <result column="QUATE_NAME" property="quateName" />
+        <collection property="detailList" column="QUATE_NAME" javaType="ArrayList"
+                    ofType="com.team.performance.entity.PerformancePublishedInfoVo">
+            <result column="DETAIL_RULE" property="detailRule" />
+            <result column="INTEGRAL" property="integral" />
+            <result column="ASSESSMENT_CYCLE" property="assessmentCycle" />
+            <result column="ASSESSOR" property="assessor" />
+            <result column="ASSESSMENT_OBJECT" property="assessmentObject" />
+        </collection>
+    </resultMap>
+
+    <!--   // 查询已发布的；当前时间大于发布时间的绩效模板；且适用班组为部分班组的；且未删除的绩效
+            // 并先迁移主表至发布表中，并塞入时间
+            -->
+    <insert id="insertPublishedFromModel">
+        insert into t_performance_published_info
+        (
+        quate_name,
+        detail_rule,
+        assessment_cycle,
+        integral,
+        assessor,
+        assessment_object,
+        publish_time,
+        source,
+        company_id,
+        company_name,
+        show_time,
+        model_rel_id,
+        productor_id,
+        updated_by,
+        updated_time,
+        created_by,
+        created_time
+        )
+        SELECT
+        quate_name,
+        detail_rule,
+        assessment_cycle,
+        integral,
+        assessor,
+        assessment_object,
+        publish_time,
+        source,
+        company_id,
+        company_name,
+        NOW(),
+        id as modelRelId,
+        productor_id,
+        productor_id,
+        publish_time,
+        productor_id,
+        publish_time
+        from t_performance_evaluation_model
+        WHERE (publish_state = 2 or publish_state = 3)
+        and publish_time &lt; NOW()
+        and IS_HAV_TEAM = 2
+        and is_deleted = 0
+    </insert>
+
+    <!-- 查询历史绩效发布记录列表 -->
+    <select id="queryHistoryPerforPublishList" resultMap="historyMap">
+        select quate_name,assessment_cycle,integral,assessor,assessment_object,detail_rule
+        from t_performance_published_info
+        where show_time >= #{startTime}
+            and show_time &lt;= #{endTime}
+            and id in (select published_id from t_performance_published_teamrel
+                    where team_code = #{teamCode})
+            <if test="assessmentCycle != '' and assessmentCycle != null">
+                and assessment_cycle = #{assessmentCycle}
+            </if>
+    </select>
+
+    <!-- 根据当前查询月份或季度和班组编码查询对应的绩效模板列表 -->
+    <select id="queryPublishList" resultType="com.team.performance.entity.PerformancePublishedInfoVo">
+        select quate_name,assessment_cycle,show_time
+        from t_performance_published_info
+        where show_time >= #{startTime}
+            and show_time &lt;= #{endTime}
+            and id in (select published_id from t_performance_published_teamrel
+                where team_code = #{teamCode})
+            and assessment_cycle = #{assessmentCycle}
+        group by quate_name,assessment_cycle,show_time
+    </select>
+
+    <!-- 查询班员绩效评价标准 -->
+    <select id="queryPerforPublishModelList" resultMap="historyMap">
+        select quate_name,assessment_cycle,integral,assessor,assessment_object,detail_rule
+        from t_performance_published_info
+        where
+        <choose>
+            <when test="startTime == null">
+                show_time  IN
+                (
+                    SELECT MAX ( show_time )
+                    FROM t_performance_record record
+                    WHERE record.team_code = #{teamCode}
+                )
+            </when>
+            <otherwise>
+                show_time >= #{startTime}
+                and show_time &lt;= #{endTime}
+            </otherwise>
+        </choose>
+        and id in (select published_id from t_performance_published_teamrel
+            where team_code = #{teamCode})
+        <if test="assessmentCycle != '' and assessmentCycle != null">
+            and assessment_cycle = #{assessmentCycle}
+        </if>
+    </select>
+
+</mapper>

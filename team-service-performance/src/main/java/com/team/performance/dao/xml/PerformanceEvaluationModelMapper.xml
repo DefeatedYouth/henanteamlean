@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.team.performance.dao.PerformanceEvaluationModelMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.team.performance.entity.PerformanceEvaluationModelVo">
+        <id column="ID" property="id" />
+        <result column="UPDATED_BY" property="updatedBy" />
+        <result column="UPDATED_TIME" property="updatedTime" />
+        <result column="CREATED_BY" property="createdBy" />
+        <result column="CREATED_TIME" property="createdTime" />
+        <result column="IS_DELETED" property="isDeleted" />
+        <result column="COMPANY_NAME" property="companyName" />
+        <result column="COMPANY_ID" property="companyId" />
+        <result column="IS_HAV_TEAM" property="isHavTeam" />
+        <result column="QUATE_NAME" property="quateName" />
+        <result column="DETAIL_RULE" property="detailRule" />
+        <result column="ASSESSMENT_CYCLE" property="assessmentCycle" />
+        <result column="ASSESSOR" property="assessor" />
+        <result column="ASSESSMENT_OBJECT" property="assessmentObject" />
+        <result column="INTEGRAL" property="integral" />
+        <result column="PUBLISH_TIME" property="publishTime" />
+        <result column="PUBLISH_STATE" property="publishState" />
+        <result column="PRODUCTOR_ID" property="productorId" />
+        <result column="SOURCE" property="source" />
+    </resultMap>
+
+    <!-- 新增绩效评价模板表 -->
+    <insert id="addPerformanceEvaluationModel" useGeneratedKeys="true" keyProperty="id">
+        insert into t_performance_evaluation_model
+        (
+            updated_by,created_by,IS_HAV_TEAM,QUATE_NAME,detail_rule,assessment_cycle,assessor,
+            assessment_object,integral,productor_id,updated_time,created_time,company_name,source,
+            company_id,publish_state
+        )
+        values
+        (
+            #{createdBy},#{createdBy},#{isHavTeam},#{quateName},#{detailRule},#{assessmentCycle},#{assessor},
+            #{assessmentObject},#{integral},#{productorId},#{createdTime},#{createdTime},#{companyName},
+            #{source},#{companyId},#{publishState}
+        )
+    </insert>
+
+    <!-- 编辑绩效评价模板 -->
+    <update id="editPerformanceEvaluationModel">
+        update t_performance_evaluation_model
+        set updated_by = #{updatedBy},
+            QUATE_NAME = #{quateName},
+            detail_rule = #{detailRule},
+            assessment_cycle = #{assessmentCycle},
+            assessor = #{assessor},
+            assessment_object = #{assessmentObject},
+            integral = #{integral},
+            updated_time = #{updatedTime}
+        where id = #{id}
+            and PUBLISH_STATE = 1
+            and source = #{source}
+    </update>
+
+    <!-- 删除模型中的数据 -->
+    <update id="deletePerformanceEvaluationModel">
+        update t_performance_evaluation_model
+        set is_deleted = 1,updated_by = #{updatedBy},
+            updated_time = #{updatedTime}
+        where id = #{id}
+            and PUBLISH_STATE = 1
+            and source = #{source}
+    </update>
+
+    <!-- 发布绩效评价模板 -->
+    <update id="publishPerformanceEvaluationModel">
+        update t_performance_evaluation_model
+        set PUBLISH_STATE = #{model.publishState},
+            PUBLISH_TIME = #{model.publishTime},
+            updated_by = #{model.updatedBy},
+            updated_time = #{model.updatedTime}
+        where id in
+            <foreach collection="list" index="index" item="item" separator="," open="(" close=")">
+                #{item}
+            </foreach>
+            and source = #{model.source}
+            <choose>
+                <when test="model.publishState == 2">
+                    and PUBLISH_STATE = 1
+                </when>
+                <otherwise>
+                </otherwise>
+            </choose>
+            <if test="model.isHavTeam != null and model.isHavTeam != ''">
+                and IS_HAV_TEAM = #{model.isHavTeam}
+            </if>
+    </update>
+
+    <!-- 批量修改班组信息-编辑绩效评价模板 -->
+    <update id="editPerformanceEvaluationModelFromTeam">
+        update t_performance_evaluation_model
+        set updated_by = #{updatedBy},
+            IS_HAV_TEAM = #{isHavTeam},
+            updated_time = #{updatedTime}
+        where id = #{id}
+    </update>
+
+    <!-- 修改模板表中发布状态为已发布状态 -->
+    <update id="updateModelPublishState">
+        UPDATE t_performance_evaluation_model
+        set publish_state = 3
+        WHERE id in
+        (
+            SELECT id from t_performance_evaluation_model
+            WHERE publish_state = 2
+            and publish_time &lt; NOW()
+            and IS_HAV_TEAM = 2
+            and is_deleted = 0
+        )
+    </update>
+
+    <!-- 查询绩效评价模板列表总数 -->
+    <select id="queryModelCount" resultType="java.lang.Integer">
+        select count(1)
+        from t_performance_evaluation_model model
+        <where>
+            is_deleted = 0
+            and source = 1
+            and productor_id = #{productorId}
+            <if test="quateName != null and quateName != ''">
+                and QUATE_NAME like concat('%',#{quateName},'%')
+            </if>
+            <if test="assessmentCycle != null and assessmentCycle != ''">
+                and assessment_cycle = #{assessmentCycle}
+            </if>
+            <if test="publishState != null and publishState != ''">
+                and publish_state = #{publishState}
+            </if>
+            <if test="teamCode != null and teamCode != ''">
+                and (
+                    model.IS_HAV_TEAM = 2 and
+                    model.id in (select EVALUATION_MODEL_ID from t_performance_model_teamrel where team_code = #{teamCode})
+                )
+            </if>
+        </where>
+    </select>
+
+    <!-- 分页查询绩效评价模板列表 -->
+    <select id="queryModelListByPage" resultType="com.team.performance.entity.PerformanceEvaluationModelVo">
+        select ID,COMPANY_NAME,QUATE_NAME,DETAIL_RULE,ASSESSMENT_CYCLE,ASSESSOR,ASSESSMENT_OBJECT,
+                INTEGRAL,PUBLISH_STATE,PUBLISH_TIME,created_by,IS_HAV_TEAM,
+                case
+                when IS_HAV_TEAM = 1 then ''
+                else (select string_agg(team_name,',') from t_performance_model_teamrel where EVALUATION_MODEL_ID = model.id)
+                end teamName
+        from t_performance_evaluation_model model
+        <where>
+            is_deleted = 0
+            and source = 1
+            and productor_id = #{productorId}
+            <if test="quateName != null and quateName != ''">
+                and QUATE_NAME like concat('%',#{quateName},'%')
+            </if>
+            <if test="assessmentCycle != null and assessmentCycle != ''">
+                and assessment_cycle = #{assessmentCycle}
+            </if>
+            <if test="publishState != null and publishState != ''">
+                and publish_state = #{publishState}
+            </if>
+            <if test="teamCode != null and teamCode != ''">
+                and (
+                    model.IS_HAV_TEAM = 2 and
+                    model.id in (select EVALUATION_MODEL_ID from t_performance_model_teamrel where team_code = #{teamCode})
+                )
+            </if>
+        </where>
+        order by updated_time desc
+        limit #{pageSize} offset #{pageNum}
+    </select>
+
+    <!-- 查询班长绩效评价模板列表总数 -->
+    <select id="queryMonitorModelCount" resultType="java.lang.Integer">
+        select count(1)
+        from t_performance_evaluation_model model
+        <where>
+            is_deleted = 0
+            and ((source = 1 and publish_state = 3) or (source = 2 and productor_id = #{productorId}))
+            and (
+                model.IS_HAV_TEAM = 2 and
+                model.id in (select EVALUATION_MODEL_ID from t_performance_model_teamrel where team_code = #{teamCode})
+            )
+            <if test="source != null and source != ''">
+                and source = #{source}
+            </if>
+            <if test="quateName != null and quateName != ''">
+                and QUATE_NAME like concat('%',#{quateName},'%')
+            </if>
+            <if test="assessmentCycle != null and assessmentCycle != ''">
+                and assessment_cycle = #{assessmentCycle}
+            </if>
+            <choose>
+                <when test="publishState == 3">
+                    and ((source = 1 and publish_state = 3) or (source = 2 and publish_state = #{publishState}))
+                </when>
+                <otherwise>
+                    <if test="publishState != null and publishState != ''">
+                        and publish_state = #{publishState}
+                    </if>
+                </otherwise>
+            </choose>
+        </where>
+    </select>
+
+    <!-- 分页班长查询绩效评价模板列表 -->
+    <select id="queryMonitorModelListByPage"
+            resultType="com.team.performance.entity.PerformanceEvaluationModelVo">
+        select ID,COMPANY_NAME,QUATE_NAME,DETAIL_RULE,ASSESSMENT_CYCLE,ASSESSOR,ASSESSMENT_OBJECT,
+                INTEGRAL,PUBLISH_STATE,PUBLISH_TIME,created_by,IS_HAV_TEAM,SOURCE,
+                case
+                when IS_HAV_TEAM = 1 then ''
+                else (select string_agg(team_name,',') from t_performance_model_teamrel where EVALUATION_MODEL_ID = model.id)
+                end teamName
+        from t_performance_evaluation_model model
+        <where>
+            is_deleted = 0
+            and ((source = 1 and publish_state = 3) or (source = 2 and productor_id = #{productorId}))
+            and (
+                model.IS_HAV_TEAM = 2 and
+                model.id in (select EVALUATION_MODEL_ID from t_performance_model_teamrel where team_code = #{teamCode})
+            )
+            <if test="source != null and source != ''">
+                and source = #{source}
+            </if>
+            <if test="quateName != null and quateName != ''">
+                and QUATE_NAME like concat('%',#{quateName},'%')
+            </if>
+            <if test="assessmentCycle != null and assessmentCycle != ''">
+                and assessment_cycle = #{assessmentCycle}
+            </if>
+            <choose>
+                <when test="publishState == 3">
+                    and ((source = 1 and publish_state = 3) or (source = 2 and publish_state = #{publishState}))
+                </when>
+                <otherwise>
+                    <if test="publishState != null and publishState != ''">
+                        and publish_state = #{publishState}
+                    </if>
+                </otherwise>
+            </choose>
+        </where>
+        order by source,updated_time desc
+        limit #{pageSize} offset #{pageNum}
+    </select>
+
+    <!-- 标准查询列表 -->
+    <select id="queryMonitorPerforModelRuleList"
+            resultType="com.team.performance.entity.PerformanceEvaluationModelVo">
+        select ID,QUATE_NAME,DETAIL_RULE,ASSESSMENT_CYCLE,ASSESSOR,ASSESSMENT_OBJECT,
+                INTEGRAL,PUBLISH_STATE
+        from t_performance_evaluation_model model
+        <where>
+            is_deleted = 0
+            and (
+                model.IS_HAV_TEAM = 2 and
+                model.id in (select EVALUATION_MODEL_ID from t_performance_model_teamrel where team_code = #{teamCode})
+            )
+            and source = 2
+            and publish_state in (2,3)
+            and productor_id = #{productorId}
+        </where>
+        order by updated_time desc
+    </select>
+
+</mapper>

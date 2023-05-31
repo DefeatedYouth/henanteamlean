@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.team.basic.dao.CulturalWorkPerformanceMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.team.basic.entity.CulturalWorkPerformanceVo">
+        <id column="ID" property="id" />
+        <result column="PERFORMANCE_NAME" property="performanceName" />
+        <result column="WORK_CONTENT" property="workContent" />
+        <result column="PERSONNEL_ID" property="personnelId" />
+        <result column="PERSONNEL_NAME" property="personnelName" />
+        <result column="SUPPORTING_MATERIALS_ID" property="supportingMaterialsId" />
+        <result column="REMARKS" property="remarks" />
+        <result column="RELEASE_STATUS" property="releaseStatus" />
+        <result column="UPDATED_ID" property="updatedId" />
+        <result column="UPDATED_BY" property="updatedBy" />
+        <result column="UPDATED_TIME" property="updatedTime" />
+        <result column="CREATED_ID" property="createdId" />
+        <result column="CREATED_BY" property="createdBy" />
+        <result column="CREATED_TIME" property="createdTime" />
+        <result column="START_TIME" property="startTime" />
+        <result column="END_TIME" property="endTime" />
+        <result column="IS_DELETE" property="isDelete" />
+    </resultMap>
+
+    <select id="queryCulturalWorkPerformance" resultMap="BaseResultMap">
+        SELECT
+        ID,
+        START_TIME,
+        END_TIME,
+        PERFORMANCE_NAME,
+        WORK_CONTENT,
+        PERSONNEL_ID,
+        PERSONNEL_NAME,
+        REMARKS,
+        SUPPORTING_MATERIALS_ID,
+        CREATED_ID,
+        CREATED_BY
+        FROM
+        T_CULTURAL_WORK_PERFORMANCE
+        WHERE IS_DELETE = 0
+        <if test="performanceName != null and performanceName != ''">
+            AND PERFORMANCE_NAME like concat('%',#{performanceName},'%')
+        </if>
+        <if test="personnelName != null and personnelName != ''">
+            AND PERSONNEL_NAME = #{personnelName}
+        </if>
+        <if test="startTime != null">
+            AND START_TIME <![CDATA[>=]]> #{startTime}
+        </if>
+        <if test="endTime != null">
+            AND END_TIME <![CDATA[<=]]> #{endTime}
+        </if>
+        ORDER BY CREATED_TIME DESC
+    </select>
+
+    <insert id="addCulturalWorkPerformance">
+        INSERT INTO T_CULTURAL_WORK_PERFORMANCE
+        (START_TIME,END_TIME,PERFORMANCE_NAME,WORK_CONTENT,PERSONNEL_ID,PERSONNEL_NAME,SUPPORTING_MATERIALS_ID,REMARKS,CREATED_ID,CREATED_BY,CREATED_TIME,RELEASE_STATUS)
+            VALUES
+        (#{startTime},#{endTime},#{performanceName},#{workContent},#{personnelId},#{personnelName},#{supportingMaterialsId},#{remarks},#{createdId},#{createdBy},#{createdTime},#{releaseStatus})
+    </insert>
+
+</mapper>

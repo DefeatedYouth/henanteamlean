@@ -1,0 +1,8 @@
+# Project exclude paths
+/team-app/target/
+/team-common/target/
+/team-service-account/target/
+/team-service-basicinfo/target/
+/team-service-performance/target/
+/team-service-work/target/
+/team-web/target/

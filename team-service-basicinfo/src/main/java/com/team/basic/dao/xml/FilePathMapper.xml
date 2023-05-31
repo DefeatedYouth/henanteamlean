@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.team.basic.dao.FilePathMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.team.basic.entity.FilePathVo">
+        <id column="ID" property="id" />
+        <result column="FILE_NAME" property="fileName" />
+        <result column="TYPE" property="type" />
+        <result column="PATH" property="path" />
+        <result column="PATH_ID" property="pathId" />
+        <result column="IS_DELETE" property="isDelete" />
+    </resultMap>
+
+    <select id="filePathQuery" resultMap="BaseResultMap">
+        SELECT
+            ID,
+            FILE_NAME,
+            TYPE,
+            PATH,
+            PATH_ID
+        FROM T_FILE_PATH
+        WHERE IS_DELETE = 0
+         <if test="id != null">
+             AND ID = #{id}
+         </if>
+         <if test="pathId != null and pathId != ''">
+            AND PATH_ID = #{pathId}
+         </if>
+         <if test="path != null and path != ''">
+             AND PATH = #{path}
+         </if>
+    </select>
+
+    <insert id="filePathUpload">
+        INSERT INTO T_FILE_PATH
+        (TYPE,FILE_NAME,PATH,PATH_ID)
+        VALUES
+        <if test="path != null and path != ''">
+            (#{type},#{fileName},#{path},#{pathId})
+        </if>
+    </insert>
+</mapper>

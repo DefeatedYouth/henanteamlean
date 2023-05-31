@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.team.work.dao.WorkModelMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.team.work.entity.WorkModelVo">
+        <id column="ID" property="id" />
+        <result column="MODEL_NO" property="modelNo" />
+        <result column="WORK_CONTENT" property="workContent" />
+        <result column="WORK_TYPE" property="workType" />
+        <result column="WORK_NATURE" property="workNature" />
+        <result column="WORK_LEVEL" property="workLevel" />
+        <result column="LEADER_ID" property="leaderId" />
+        <result column="LEADER_NAME" property="leaderName" />
+        <result column="MEMBER_CONTENT" property="memberContent" />
+        <result column="NORM_INTEGRAL" property="normIntegral" />
+        <result column="PERIOD" property="period" />
+        <result column="PERIOD_TYPE" property="periodType" />
+        <result column="PERIOD_STATUS" property="periodStatus" />
+        <result column="STATION_ID" property="stationId" />
+        <result column="TEAM_ID" property="teamId" />
+        <result column="UPDATED_BY" property="updatedBy" />
+        <result column="UPDATED_TIME" property="updatedTime" />
+        <result column="CREATED_BY" property="createdBy" />
+        <result column="CREATED_TIME" property="createdTime" />
+        <result column="LAST_PUSH" property="lastPush" />
+        <result column="DELETED" property="deleted" />
+    </resultMap>
+
+</mapper>

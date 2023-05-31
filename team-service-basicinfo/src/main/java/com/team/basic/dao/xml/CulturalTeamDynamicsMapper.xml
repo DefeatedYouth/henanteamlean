@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.team.basic.dao.CulturalTeamDynamicsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.team.basic.entity.CulturalTeamDynamicsVo">
+        <id column="ID" property="id" />
+        <result column="TITLE" property="title" />
+        <result column="DYNAMIC_DESCRIPTION" property="dynamicDescription" />
+        <result column="PICTURE_ID" property="pictureId" />
+        <result column="RELEASE_STATUS" property="releaseStatus" />
+        <result column="UPDATED_ID" property="updatedId" />
+        <result column="UPDATED_BY" property="updatedBy" />
+        <result column="UPDATED_TIME" property="updatedTime" />
+        <result column="CREATED_ID" property="createdId" />
+        <result column="CREATED_BY" property="createdBy" />
+        <result column="CREATED_TIME" property="createdTime" />
+        <result column="IS_DELETE" property="isDelete" />
+    </resultMap>
+
+    <select id="queryCulturalTeamDynamics" resultMap="BaseResultMap">
+        SELECT
+        ID,
+        TITLE,
+        DYNAMIC_DESCRIPTION,
+        PICTURE_ID,
+        CREATED_ID,
+        CREATED_BY,
+        CREATED_TIME
+        FROM
+        T_CULTURAL_TEAM_DYNAMICS
+        WHERE IS_DELETE = 0
+        <if test="title != null and title != ''">
+            AND TITLE like concat('%',#{title},'%')
+        </if>
+        <if test="createdBy != null and createdBy != ''">
+            AND CREATED_BY like concat('%',#{createdBy},'%')
+        </if>
+        <if test="startTime != null and startTime != ''">
+            AND CREATED_TIME <![CDATA[>=]]> #{startTime}
+        </if>
+        <if test="endTime != null and endTime != ''">
+            AND CREATED_TIME <![CDATA[<=]]> #{endTime}
+        </if>
+        ORDER BY CREATED_TIME DESC
+    </select>
+
+    <insert id="addCulturalTeamDynamics">
+        INSERT INTO T_CULTURAL_TEAM_DYNAMICS
+        (TITLE,DYNAMIC_DESCRIPTION,PICTURE_ID,CREATED_ID,CREATED_BY,CREATED_TIME,RELEASE_STATUS)
+            VALUES
+        (#{title},#{dynamicDescription},#{pictureId},#{createdId},#{createdBy},#{createdTime},#{releaseStatus})
+    </insert>
+
+</mapper>

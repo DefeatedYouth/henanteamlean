@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.team.basic.dao.SysHolidaysMapper">
+  <resultMap id="BaseResultMap" type="com.team.basic.entity.SysHolidaysVo">
+    <!--@mbg.generated-->
+    <!--@Table t_sys_holidays-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="holidays_name" jdbcType="VARCHAR" property="holidaysName" />
+    <result column="start_time" jdbcType="TIMESTAMP" property="startTime" />
+    <result column="end_time" jdbcType="TIMESTAMP" property="endTime" />
+    <result column="holidays_days" jdbcType="INTEGER" property="holidaysDays" />
+    <result column="days_off_date" jdbcType="VARCHAR" property="daysOffDate" />
+    <result column="year" jdbcType="INTEGER" property="year" />
+    <result column="updated_id" jdbcType="VARCHAR" property="updatedId" />
+    <result column="updated_by" jdbcType="VARCHAR" property="updatedBy" />
+    <result column="updated_time" jdbcType="TIMESTAMP" property="updatedTime" />
+    <result column="producer_id" jdbcType="VARCHAR" property="producerId" />
+    <result column="created_by" jdbcType="VARCHAR" property="createdBy" />
+    <result column="created_time" jdbcType="TIMESTAMP" property="createdTime" />
+    <result column="is_deleted" jdbcType="INTEGER" property="isDeleted" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, holidays_name, start_time, end_time, holidays_days, days_off_date, "year", updated_id, 
+    updated_by, updated_time, producer_id, created_by, created_time, is_deleted
+  </sql>
+</mapper>

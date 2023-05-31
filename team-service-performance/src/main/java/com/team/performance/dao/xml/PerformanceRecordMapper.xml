@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.team.performance.dao.PerformanceRecordMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.team.performance.entity.PerformanceRecordVo">
+        <id column="ID" property="id" />
+        <result column="UPDATED_BY" property="updatedBy" />
+        <result column="UPDATED_TIME" property="updatedTime" />
+        <result column="CREATED_BY" property="createdBy" />
+        <result column="CREATED_TIME" property="createdTime" />
+        <result column="IS_DELETED" property="isDeleted" />
+        <result column="TEAM_PEO_CODE" property="teamPeoCode" />
+        <result column="TEAM_PEO_NAME" property="teamPeoName" />
+        <result column="LAST_INTEGRAL" property="lastIntegral" />
+        <result column="PERFOR_LEVEL" property="perforLevel" />
+        <result column="STATUS" property="status" />
+        <result column="PUBLISH_PEOPLE" property="publishPeople" />
+        <result column="PUBLISH_TIME" property="publishTime" />
+        <result column="ASSESSMENT_CYCLE" property="assessmentCycle" />
+        <result column="TEAM_CODE" property="teamCode" />
+        <result column="SHOW_TIME" property="showTime" />
+        <result column="PRODUCTOR_ID" property="productorId" />
+        <collection property="detailList" column="RECORD_ID" javaType="ArrayList"
+                    ofType="com.team.performance.entity.PerformanceRecordDetailVo">
+            <result column="detailId" property="detailId" />
+            <result column="QUATE_NAME" property="quateName" />
+            <result column="REMARK" property="remark" />
+            <result column="INTEGRAL" property="integral" />
+            <result column="RECORD_ID" property="recordId" />
+        </collection>
+    </resultMap>
+
+    <!-- 查询最近一次已发布的绩效评价 -->
+    <select id="queryClassMemberPerforEvaList" resultMap="BaseResultMap">
+        SELECT
+            record.id,record.TEAM_PEO_CODE,record.TEAM_PEO_NAME,record.LAST_INTEGRAL,record.PERFOR_LEVEL,STATUS,
+            detail.id as detailId,detail.QUATE_NAME,detail.REMARK,detail.INTEGRAL,detail.RECORD_ID
+        FROM
+            t_performance_record record
+            LEFT JOIN t_performance_record_detail detail ON record.ID = detail.record_id
+        WHERE
+            record.team_code = #{teamCode}
+            AND show_time IN
+                (
+                    SELECT MAX ( show_time )
+                    FROM t_performance_record record
+                    WHERE record.team_code = #{teamCode}
+                )
+    </select>
+
+    <!-- 查询评价记录 -->
+    <select id="queryClassMemberPerforEvaRecordList" resultMap="BaseResultMap">
+        SELECT
+        record.id,record.TEAM_PEO_CODE,record.TEAM_PEO_NAME,record.LAST_INTEGRAL,record.PERFOR_LEVEL,STATUS,
+        detail.id as detailId,detail.QUATE_NAME,detail.REMARK,detail.INTEGRAL,detail.RECORD_ID
+        FROM
+        t_performance_record record
+        LEFT JOIN t_performance_record_detail detail ON record.ID = detail.record_id
+        WHERE
+        record.team_code = #{teamCode}
+        <if test="assessmentCycle != null and assessmentCycle != ''">
+            and record.ASSESSMENT_CYCLE = #{assessmentCycle}
+        </if>
+        and record.show_time >= #{startTime}
+        and record.show_time &lt;= #{endTime}
+    </select>
+
+</mapper>

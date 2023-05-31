@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.team.work.dao.WorkMemberCheckingMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.team.work.entity.WorkMemberCheckingVo">
+        <id column="ID" property="id" />
+        <result column="MEMBER_ID" property="memberId" />
+        <result column="MEMBER_NAME" property="memberName" />
+        <result column="WORK_DAY" property="workDay" />
+        <result column="WORK_NO" property="workNo" />
+        <result column="WORK_TYPE" property="workType" />
+        <result column="WORK_STATUS" property="workStatus" />
+        <result column="LEAVE_TYPE" property="leaveType" />
+        <result column="UPDATED_BY" property="updatedBy" />
+        <result column="UPDATED_TIME" property="updatedTime" />
+        <result column="CREATED_BY" property="createdBy" />
+        <result column="CREATED_TIME" property="createdTime" />
+        <result column="DELETED" property="deleted" />
+        <result column="STATION_ID" property="stationId" />
+        <result column="TEAM_ID" property="teamId" />
+    </resultMap>
+
+    <select id="queryOnJobCount" resultType="com.team.work.dto.PersonPlanDto">
+        -- 查询类型和总人天
+        select 0 as type, MEMBER_ID as memberId
+        from t_work_member_checking
+        where WORK_STATUS = 0
+        and WORK_DAY &gt; #{starTime}
+        and WORK_DAY &lt;= #{endTime}
+        <if test="teamId!=null">
+            and TEAM_ID = #{teamId}
+        </if>
+        <if test="memberId!=null">
+            and MEMBER_ID = #{memberId}
+        </if>
+        and DELETED = 0
+        union all
+        select 1 as type, MEMBER_ID as memberId
+        from t_work_member_checking
+        where (WORK_STATUS = 1 or WORK_STATUS = 2 or WORK_STATUS = 3 )
+        and WORK_DAY &gt; #{starTime}
+        and WORK_DAY &lt;= #{endTime}
+        <if test="teamId!=null">
+            and TEAM_ID = #{teamId}
+        </if>
+        <if test="memberId!=null">
+            and MEMBER_ID = #{memberId}
+        </if>
+        and DELETED = 0
+        union all
+        select 4 as type, MEMBER_ID as memberId
+        from t_work_member_checking
+        where WORK_STATUS = 4
+        and WORK_DAY &gt; #{starTime}
+        and WORK_DAY &lt;= #{endTime}
+        <if test="teamId!=null">
+            and TEAM_ID = #{teamId}
+        </if>
+        <if test="memberId!=null">
+            and MEMBER_ID = #{memberId}
+        </if>
+        and DELETED = 0
+    </select>
+    <select id="queryWorkTypeCount" resultType="com.team.work.dto.WorkPlanDto">
+        select WORK_TYPE as workType, count(id) as workNum
+        from t_work_member_checking
+        where WORK_NO is not null
+        and WORK_DAY &gt; #{starTime}
+        and WORK_DAY &lt;= #{endTime}
+        and DELETED = 0
+        group by WORK_TYPE
+    </select>
+    <select id="queryCalendarHeadInfo" resultType="com.team.work.dto.CalendarHeadInfoDto">
+        SELECT work_day as workDay,work_status as workStatus,count(1) as count
+        FROM t_work_member_checking
+        where WORK_DAY &gt; #{starTime}
+        and WORK_DAY &lt;= #{endTime}
+        <if test="teamId!=null">
+            and TEAM_ID = #{teamId}
+        </if>
+        and DELETED = 0
+
+        group by WORK_DAY,WORK_STATUS;
+    </select>
+    <select id="queryCalendarBodyInfo" resultType="com.team.work.dto.WorkCalendarPlanDto">
+        select work_day as workDay,WORK_TYPE as workType,count(*) as workNum
+         FROM t_work_member_checking
+         where WORK_DAY &gt; #{starTime}
+         and WORK_DAY &lt;= #{endTime}
+         and DELETED = 0
+          and WORK_NO is not null
+         group by WORK_DAY,WORK_TYPE -- ,work_no
+    </select>
+    <select id="queryCalendarBodyInfoByTeamId" resultType="com.team.work.dto.WorkCalendarPlanDto">
+        select work_day as workDay,WORK_TYPE as workType,group_concat(MEMBER_NAME) as workMember,
+        count(*) as workNum
+         FROM t_work_member_checking
+         where WORK_DAY &gt; #{starTime}
+         and WORK_DAY &lt;= #{endTime}
+         and DELETED = 0
+        and WORK_NO is not null
+        <if test="teamId!=null">
+            and TEAM_ID = #{teamId}
+        </if>
+         group by WORK_DAY,WORK_TYPE
+    </select>
+    <select id="queryWorkLogContent" resultType="com.team.work.dto.WorkLogDayListDto">
+        select b.MEMBER_ID as memberId,b.MEMBER_NAME as memberName,
+            b.WORK_DAY as workDay,group_concat(b.workContent) as content
+         from(
+            select
+            a.MEMBER_ID,a.MEMBER_NAME,a.WORK_DAY,a.WORK_NO,
+            case
+                when a.WORK_STATUS = 4 then a.leaveType
+                when a.WORK_NO is null then concat(a.workStatus,':√')
+                else concat(a.workStatus,':',a.workType)
+            end workContent
+            from (
+                select
+                MEMBER_ID,MEMBER_NAME,WORK_DAY,WORK_NO,
+                case LEAVE_TYPE
+                    when 0 then '旷工'
+                    when 1 then '事假'
+                    when 2 then '病假'
+                    when 3 then '婚假'
+                    when 4 then '丧假'
+                    when 5 then '产假'
+                    when 6 then '探亲假'
+                    when 7 then '年休假'
+                    when 8 then '护理假'
+                    when 9 then '疗休养'
+                end leaveType,
+                case WORK_STATUS
+                    when 0 then '出勤'
+                    when 1 then '出差'
+                    when 2 then '培训'
+                    when 3 then '借调'
+                    when 4 then '缺勤'
+                end workStatus,WORK_STATUS,
+                case WORK_TYPE
+                    when 0 then '班组建设'
+                    when 1 then '员工培训'
+                    when 2 then '安全活动'
+                    when 3 then '现场生产'
+                    when 4 then '基建验收'
+                    when 5 then '基础管理'
+                    when 6 then '科技创新'
+                    when 7 then '综合事务'
+                    when 8 then '临时任务'
+                    when 9 then '其他'
+                end workType,WORK_TYPE
+                from t_work_member_checking
+                where WORK_DAY &gt; #{startTime}
+                and WORK_DAY &lt;= #{endTime}
+                <if test="teamId!=null">
+                    and TEAM_ID = #{teamId}
+                </if>
+                and DELETED = 0
+            ) a
+            ) b group by b.MEMBER_ID,b.WORK_DAY,b.MEMBER_NAME
+            order by b.WORK_DAY
+
+    </select>
+
+</mapper>

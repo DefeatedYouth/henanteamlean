@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.team.work.dao.WorkInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.team.work.entity.WorkInfoVo">
+        <id column="ID" property="id" />
+        <result column="WORK_NO" property="workNo" />
+        <result column="MODEL_NO" property="modelNo" />
+        <result column="WORK_SOURCE" property="workSource" />
+        <result column="WORK_CONTENT" property="workContent" />
+        <result column="WORK_TYPE" property="workType" />
+        <result column="WORK_NATURE" property="workNature" />
+        <result column="WORK_LEVEL" property="workLevel" />
+        <result column="LEADER_ID" property="leaderId" />
+        <result column="LEADER_NAME" property="leaderName" />
+        <result column="NORM_INTEGRAL" property="normIntegral" />
+        <result column="STATION_ID" property="stationId" />
+        <result column="TEAM_ID" property="teamId" />
+        <result column="WORK_STATUS" property="workStatus" />
+        <result column="WORK_EVALUATE" property="workEvaluate" />
+        <result column="REMARK" property="remark" />
+        <result column="UPDATED_BY" property="updatedBy" />
+        <result column="UPDATED_TIME" property="updatedTime" />
+        <result column="CREATED_BY" property="createdBy" />
+        <result column="CREATED_TIME" property="createdTime" />
+        <result column="PLAN_START_TIME" property="planStartTime" />
+        <result column="PLAN_END_TIME" property="planEndTime" />
+        <result column="ACTUAL_START_TIME" property="actualStartTime" />
+        <result column="ACTUAL_END_TIME" property="actualEndTime" />
+        <result column="DELETED" property="deleted" />
+    </resultMap>
+
+    <resultMap id="PageResultMap" type="com.team.work.dto.WorkListPageResultDto">
+        <id column="id" property="id" />
+        <result column="work_no" property="workNo" />
+        <result column="work_content" property="workContent" />
+        <result column="work_type" property="workType" />
+        <result column="work_nature" property="workNature" />
+        <result column="work_level" property="workLevel" />
+        <result column="leader_id" property="leaderId" />
+        <result column="leader_name" property="leaderName" />
+        <result column="norm_integral" property="normIntegral" />
+        <result column="work_status" property="workStatus" />
+        <result column="work_evaluate" property="workEvaluate" />
+        <result column="remark" property="remark" />
+        <result column="plan_start_time" property="planStartTime" />
+        <result column="plan_end_time" property="planEndTime" />
+        <result column="actual_start_time" property="actualStartTime" />
+        <result column="actual_end_time" property="actualEndTime" />
+        <collection property="memberVoList" ofType="com.team.work.dto.WorkListPageMemberDto">
+            <result column="member_id" property="memberId" />
+            <result column="member_name" property="memberName" />
+            <result column="total_integral" property="totalIntegral" />
+            <result column="final_integral" property="finalIntegral" />
+        </collection>
+    </resultMap>
+
+    <select id="queryWorkList" resultMap="PageResultMap" parameterType="com.team.work.dto.WorkListPageDto">
+        select work.id, work.work_no, work.work_content, work.work_type,
+        work.work_nature, work.work_level, work.leader_id, work.leader_name,
+        work.norm_integral, work.work_status, work.work_evaluate, work.remark,
+        work.plan_start_time, work.plan_end_time, member.member_id, member.member_name,
+        member.total_integral, member.final_integral
+        from t_work_info work
+        left join t_work_member member on work.work_no = member.work_no
+        <where>
+            and work.DELETED = 0
+            <if test="dto.teamId!=null and dto.teamId!=''">
+                and work.TEAM_ID = #{dto.teamId}
+            </if>
+            <if test="dto.workNature!=null ">
+                and work.WORK_NATURE = #{dto.workNature}
+            </if>
+            <if test="dto.workType!=null ">
+                and work.WORK_TYPE = #{dto.workType}
+            </if>
+            <if test="dto.workLevel!=null ">
+                and work.WORK_LEVEL = #{dto.workLevel}
+            </if>
+            <if test="dto.workStatus!=null ">
+                and work.WORK_STATUS = #{dto.workStatus}
+            </if>
+            <if test="dto.workStatus==null ">
+                and work.WORK_STATUS != 4
+            </if>
+            <if test="dto.workEvaluate!=null ">
+                and work.WORK_EVALUATE = #{dto.workEvaluate}
+            </if>
+            <if test="dto.workContent!=null and dto.workContent!=''">
+                and work.WORK_CONTENT like concat('%',#{dto.workContent},'%')
+            </if>
+            <if test="dto.leaderName!=null and dto.leaderName!=''">
+                and work.LEADER_NAME = #{dto.leaderName}
+            </if>
+            <if test="dto.planStartTime!=null">
+                and work.PLAN_START_TIME &gt;= #{dto.planStartTime}
+            </if>
+            <if test="dto.planEndTime!=null">
+                and work.PLAN_END_TIME &lt;= #{dto.planEndTime}
+            </if>
+        </where>
+        order by work.CREATED_TIME desc
+    </select>
+
+    <select id="queryHomeList" resultType="com.team.work.entity.WorkInfoVo">
+        -- 查询待执行，执行中，已完成
+        <if test="queryType==0 or queryType==2 or  queryType==3 or queryType==4">
+            select id, WORK_CONTENT as workContent,WORK_STATUS as workStatus,
+            PLAN_START_TIME as planStartTime,PLAN_END_TIME as planEndTime,
+            ACTUAL_START_TIME as actualStartTime,
+            ACTUAL_END_TIME as actualEndTime
+            from t_work_info
+            where DELETED = 0
+            <if test="queryType==0">
+                and WORK_STATUS in (1,2,3)
+            </if>
+            <if test="queryType==2">
+                and WORK_STATUS = 3
+            </if>
+            <if test="queryType==3">
+                and WORK_STATUS = 2
+            </if>
+            <if test="queryType==4">
+                and WORK_STATUS = 1
+            </if>
+        </if>
+        -- 全部和超期
+        <if test="queryType==0 or queryType==1">
+            <if test="queryType!=1">
+                union
+            </if>
+            -- 超时
+            select id, WORK_CONTENT as workContent, 6 as workStatus,
+            PLAN_START_TIME as planStartTime,PLAN_END_TIME as planEndTime,
+            ACTUAL_START_TIME as actualStartTime,
+            ACTUAL_END_TIME as actualEndTime
+            from t_work_info
+            where DELETED = 0
+            and WORK_STATUS = 1
+            and PLAN_START_TIME &lt; now()
+        </if>
+    </select>
+    <select id="queryExecuteWorkAndMember" resultType="com.team.work.dto.ExecuteWorkAndMember">
+        select work.work_no as workNo,work.WORK_TYPE as workType,
+        work.WORK_NATURE as workNature,member.MEMBER_ID as memberId,
+        member.MEMBER_NAME as memberName, member.WORK_DAYS as workDays
+        from t_work_info work
+        left join t_work_member member on work.work_no = member.work_no
+        where work.DELETED  = 0
+        and member.DELETED = 0
+        and work.WORK_STATUS = 2
+    </select>
+
+</mapper>

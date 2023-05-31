@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.team.basic.dao.TDictStationMapper">
+  <resultMap id="BaseResultMap" type="com.team.basic.entity.TDictStationVo">
+    <!--@mbg.generated-->
+    <!--@Table t_dict_station-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="hq_name" jdbcType="VARCHAR" property="hqName" />
+    <result column="hq_id" jdbcType="VARCHAR" property="hqId" />
+    <result column="unit_name" jdbcType="VARCHAR" property="unitName" />
+    <result column="unit_id" jdbcType="VARCHAR" property="unitId" />
+    <result column="department_name" jdbcType="VARCHAR" property="departmentName" />
+    <result column="department_id" jdbcType="VARCHAR" property="departmentId" />
+    <result column="voltage_level_name" jdbcType="VARCHAR" property="voltageLevelName" />
+    <result column="voltage_level_id" jdbcType="VARCHAR" property="voltageLevelId" />
+    <result column="station_id" jdbcType="VARCHAR" property="stationId" />
+    <result column="station_name" jdbcType="VARCHAR" property="stationName" />
+    <result column="created_by" jdbcType="VARCHAR" property="createdBy" />
+    <result column="updated_time" jdbcType="TIMESTAMP" property="updatedTime" />
+    <result column="created_time" jdbcType="TIMESTAMP" property="createdTime" />
+    <result column="updated_by" jdbcType="VARCHAR" property="updatedBy" />
+    <result column="is_delete" jdbcType="INTEGER" property="isDelete" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, hq_name, hq_id, unit_name, unit_id, department_name, department_id, voltage_level_name, 
+    voltage_level_id, station_id, station_name, created_by, updated_time, created_time, 
+    updated_by, is_delete
+  </sql>
+</mapper>

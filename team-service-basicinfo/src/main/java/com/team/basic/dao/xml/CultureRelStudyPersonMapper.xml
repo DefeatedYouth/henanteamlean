@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.team.basic.dao.CultureRelStudyPersonMapper">
+  <resultMap id="BaseResultMap" type="com.team.basic.entity.CultureRelStudyPersonVo">
+    <!--@mbg.generated-->
+    <!--@Table t_culture_rel_study_person-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="study_document_id" jdbcType="INTEGER" property="studyDocumentId" />
+    <result column="team_id" jdbcType="VARCHAR" property="teamId" />
+    <result column="team_name" jdbcType="VARCHAR" property="teamName" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="is_study" jdbcType="INTEGER" property="isStudy" />
+    <result column="study_notes" jdbcType="VARCHAR" property="studyNotes" />
+    <result column="updated_id" jdbcType="VARCHAR" property="updatedId" />
+    <result column="updated_by" jdbcType="VARCHAR" property="updatedBy" />
+    <result column="updated_time" jdbcType="TIMESTAMP" property="updatedTime" />
+    <result column="producer_id" jdbcType="VARCHAR" property="producerId" />
+    <result column="created_by" jdbcType="VARCHAR" property="createdBy" />
+    <result column="created_time" jdbcType="TIMESTAMP" property="createdTime" />
+    <result column="is_deleted" jdbcType="INTEGER" property="isDeleted" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, study_document_id, team_id, team_name, user_id, user_name, is_study, study_notes, 
+    updated_id, updated_by, updated_time, producer_id, created_by, created_time, is_deleted
+  </sql>
+</mapper>

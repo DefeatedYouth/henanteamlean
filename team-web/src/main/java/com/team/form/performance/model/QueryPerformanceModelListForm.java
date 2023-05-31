@@ -1,0 +1,70 @@
+package com.team.form.performance.model;
+
+import cn.hutool.core.lang.Assert;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.team.common.request.BaseRequest;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+
+import java.math.BigDecimal;
+import java.util.Date;
+
+/**
+ * @author zhangm
+ * @date 2022/7/28$
+ */
+@Data
+@ApiModel(value="分页查询专责绩效对象信息",description="分页查询专责绩效对象信息")
+public class QueryPerformanceModelListForm extends BaseRequest {
+
+    /**
+     * 指标名称
+     */
+    @ApiModelProperty(value = "指标名称", name = "quateName")
+    private String quateName;
+
+    /**
+     * 考核周期;1：月，2：季度
+     */
+    @ApiModelProperty(value = "考核周期;1：月，2：季度", name = "assessmentCycle")
+    private Integer assessmentCycle;
+
+    /**
+     * 班组编码
+     */
+    @ApiModelProperty(value = "班组编码", name = "teamCode")
+    private String teamCode;
+
+    /**
+     * 发布状态：1未发布，2发布中,3发布
+     */
+    @ApiModelProperty(value = "发布状态：1未发布，2发布中,3发布", name = "publishState")
+    private Integer publishState;
+
+    /**
+     * 当前页数
+     */
+    @ApiModelProperty(value = "当前页数", name = "pageNum")
+    private Integer pageNum;
+
+    /**
+     * 每页大小
+     */
+    @ApiModelProperty(value = "每页大小", name = "pageSize")
+    private Integer pageSize;
+
+    /**
+     * 生产者id
+     */
+    @ApiModelProperty(value = "用户编码", name = "productorId")
+    private String productorId;
+
+    @Override
+    public boolean verifyParam() {
+        Assert.notEmpty(productorId, "当前用户id不能为空");
+        Assert.notNull(pageNum, "当前页数不能为空");
+        Assert.notNull(pageSize, "每页大小不能为空");
+        return true;
+    }
+}

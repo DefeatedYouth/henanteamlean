@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.team.basic.dao.CulturalCommentsSuggestionsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.team.basic.entity.CulturalCommentsSuggestionsVo">
+        <id column="ID" property="id" />
+        <result column="PROPOSAL_TYPE" property="proposalType" />
+        <result column="SECONDER_ID" property="seconderId" />
+        <result column="SECONDER_NAME" property="seconderName" />
+        <result column="PROPOSED_THEME" property="proposedTheme" />
+        <result column="ADOPTED" property="adopted" />
+        <result column="REASON" property="reason" />
+        <result column="DEPARTMENT" property="department" />
+        <result column="ENCLOSURE_ID" property="enclosureId" />
+        <result column="REMARKS" property="remarks" />
+        <result column="RELEASE_STATUS" property="releaseStatus" />
+        <result column="UPDATED_ID" property="updatedId" />
+        <result column="UPDATED_BY" property="updatedBy" />
+        <result column="UPDATED_TIME" property="updatedTime" />
+        <result column="CREATED_ID" property="createdId" />
+        <result column="CREATED_BY" property="createdBy" />
+        <result column="CREATED_TIME" property="createdTime" />
+        <result column="IS_DELETE" property="isDelete" />
+    </resultMap>
+
+    <select id="queryCulturalCommentsSuggestions" resultMap="BaseResultMap">
+        SELECT
+        ID,
+        PROPOSAL_TYPE,
+        SECONDER_ID,
+        SECONDER_NAME,
+        PROPOSED_THEME,
+        ADOPTED,
+        REASON,
+        DEPARTMENT,
+        ENCLOSURE_ID,
+        REMARKS,
+        RELEASE_STATUS,
+        CREATED_ID,
+        CREATED_BY,
+        CREATED_TIME
+        FROM
+        T_CULTURAL_COMMENTS_SUGGESTIONS
+        WHERE IS_DELETE = 0
+        <if test="proposedTheme != null and proposedTheme != ''">
+            AND PROPOSED_THEME like concat('%',#{proposedTheme},'%')
+        </if>
+        <if test="createdBy != null and createdBy != ''">
+            AND CREATED_BY = like concat('%',#{createdBy},'%')
+        </if>
+        <if test="proposalType != null and proposalType != ''">
+            AND PROPOSAL_TYPE = #{proposalType}
+        </if>
+        <if test="adopted != null">
+            AND ADOPTED = #{adopted}
+        </if>
+        <if test="startTime != null and startTime != ''">
+            AND CREATED_TIME <![CDATA[>=]]> #{startTime}
+        </if>
+        <if test="endTime != null and endTime != ''">
+            AND CREATED_TIME <![CDATA[<=]]> #{endTime}
+        </if>
+        ORDER BY CREATED_TIME DESC
+    </select>
+
+    <insert id="addCulturalCommentsSuggestions">
+        INSERT INTO T_CULTURAL_COMMENTS_SUGGESTIONS
+        (PROPOSAL_TYPE,SECONDER_ID,SECONDER_NAME,PROPOSED_THEME,ADOPTED,REASON,DEPARTMENT,ENCLOSURE_ID,REMARKS,RELEASE_STATUS,CREATED_ID,CREATED_BY,CREATED_TIME)
+        VALUES
+        (#{proposalType},#{seconderId},#{seconderName},#{proposedTheme},#{adopted},#{reason},#{department},#{enclosureId},#{remarks},#{releaseStatus},#{createdId},#{createdBy},#{createdTime})
+    </insert>
+
+
+</mapper>

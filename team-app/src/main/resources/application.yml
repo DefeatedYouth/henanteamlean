@@ -1,0 +1,13 @@
+#环境配置
+server:
+  port: 8002
+  servlet:
+    context-path: /hn_team_app
+spring:
+  profiles:
+    active:  dev
+  application:
+    name: hn_team_app
+logging:
+  file:
+    path: log_app
